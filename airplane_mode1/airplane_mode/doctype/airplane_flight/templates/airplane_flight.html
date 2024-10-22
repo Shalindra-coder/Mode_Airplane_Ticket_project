@@ -1,0 +1,16 @@
+
+
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<body style="background-color: rgb(211, 196, 196);">
+
+
+<h4 style="color: white;">Airline: {{doc.airplane }}</h4>
+<h4 style="color: white;">{{doc.source_airport_code}}->{{doc.destination_airport_code}}</h4>
+<h4 style="color: white;">{{doc.date_of_departure}} | {{doc.time_of_departure}}</h4>
+<h4 style="color: white;">Duration: {{frappe.utils.format_duration(doc.duration)}}</h4>
+</ul>
+<a  href="/flight-ticket-booking" class="btn btn-primary">Book Ticket</a>
+</body>
+{% endblock %}

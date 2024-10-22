@@ -1,0 +1,67 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            width: 500px;
+            background-color: #000000;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-body {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .btn {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-title">
+        {{ doc.airplane }}
+    </div>
+    <div class="card-body">
+        {{ doc.source_airport_code }} -> {{ doc.destination_airport_code }}
+    </div>
+    <div class="card-body">
+        {{ frappe.utils.format_date(doc.date_of_departure, "dd, MMMM, YYYY") }} | {{ frappe.utils.format_time(doc.time_of_departure) }} | Hour: {{ frappe.utils.format_duration(doc.duration) }}
+    </div>
+    <button class="btn" onclick="location.href='/{{ doc.route | e }}'">View Flight</button>
+</div>
+
+</body>
+</html>
