@@ -7,6 +7,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "airplane_flight_details_section",
   "airplane",
   "date_of_departure",
   "time_of_departure",
@@ -18,7 +19,10 @@
   "source_airport_code",
   "destination_airport_code",
   "published",
-  "route"
+  "route",
+  "gate_number",
+  "crew_member_details_section",
+  "crew_member"
  ],
  "fields": [
   {
@@ -62,27 +66,31 @@
   },
   {
    "fieldname": "source_airport",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Source Airport",
+   "options": "Airport",
    "reqd": 1
   },
   {
    "fieldname": "destination_airport",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Destination Airport",
+   "options": "Airport",
    "reqd": 1
   },
   {
+   "fetch_from": "source_airport.code",
    "fieldname": "source_airport_code",
    "fieldtype": "Data",
    "label": "Source Airport Code",
-   "reqd": 1
+   "options": "Airport"
   },
   {
+   "fetch_from": "destination_airport.code",
    "fieldname": "destination_airport_code",
    "fieldtype": "Data",
    "label": "Destination Airport Code",
-   "reqd": 1
+   "options": "Airport"
   },
   {
    "default": "0",
@@ -94,13 +102,35 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "airplane_flight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Airplane Flight Details"
+  },
+  {
+   "fieldname": "crew_member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Crew member Details"
+  },
+  {
+   "fieldname": "crew_member",
+   "fieldtype": "Table",
+   "label": "Crew Member",
+   "options": "Cre Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-10-21 18:03:15.389155",
+ "modified": "2024-11-08 06:37:54.993095",
  "modified_by": "Administrator",
  "module": "Airplane_mode",
  "name": "Airplane Flight",

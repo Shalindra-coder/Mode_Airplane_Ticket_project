@@ -1,0 +1,141 @@
+{
+ "app": "frappe",
+ "charts": [],
+ "content": "[{\"id\":\"fGRKlGfpnD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Airplane_Mode</span>\",\"col\":12}},{\"id\":\"hU2qC9W0QP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket\",\"col\":3}},{\"id\":\"Wjo7saVLjy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Flight\",\"col\":3}},{\"id\":\"_ZMyptWp7P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket Add-on Type\",\"col\":3}},{\"id\":\"PZOq5omALK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airport\",\"col\":3}},{\"id\":\"a36GLwYMYf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Passengers\",\"col\":3}},{\"id\":\"U4JXVAQEyN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airplanes\",\"col\":3}},{\"id\":\"qQWIqNQl4u\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airlines\",\"col\":3}},{\"id\":\"ZKrqliVxQ5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Reports</span>\",\"col\":12}},{\"id\":\"EZRj3VYshn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane by Airline\",\"col\":3}},{\"id\":\"lY9620_RqH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue by Airline\",\"col\":3}},{\"id\":\"K8myrazPjQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add-on Popularity\",\"col\":3}},{\"id\":\"vI1JOovyqC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Shop Management</span>\",\"col\":11}},{\"id\":\"alzMS5HAn3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rent Payment\",\"col\":3}},{\"id\":\"z8R9hhVhUK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Shop\",\"col\":3}},{\"id\":\"8XCyKKQaPW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Tenant\",\"col\":3}},{\"id\":\"_DYP7M7kWn\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Reports</span>\",\"col\":12}},{\"id\":\"zEaEVoNkEc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Avaible All Shop \",\"col\":3}}]",
+ "creation": "2024-10-21 10:58:13.480267",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "grid",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Airplane_mode",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2024-11-08 10:16:17.652430",
+ "modified_by": "Administrator",
+ "module": "Airplane_mode",
+ "name": "Airplane_mode",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Airplane Flight",
+   "link_to": "Airplane Flight",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Add-on Popularity",
+   "link_to": "Add-on Popularity",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Airplane Ticket",
+   "link_to": "Airplane Ticket",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Airplane Ticket Add-on Type",
+   "link_to": "Airplane Ticket Add-on Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Airport",
+   "link_to": "Airport",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Passengers",
+   "link_to": "Flight Passenger",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Airplanes",
+   "link_to": "Airplane",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Airlines",
+   "link_to": "Airline",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Airplane by Airline",
+   "link_to": "Airplane by Airline",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue by Airline",
+   "link_to": "Revenue by Airline",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rent Payment",
+   "link_to": "Rent Payment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Shop",
+   "link_to": "Airport Shop",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Tenant",
+   "link_to": "Tenant",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Avaible All Shop ",
+   "link_to": "Availble Shop",
+   "type": "Report"
+  }
+ ],
+ "title": "Airplane_mode",
+ "type": "Workspace"
+}

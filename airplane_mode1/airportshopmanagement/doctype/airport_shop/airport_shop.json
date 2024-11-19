@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:shop_number",
+ "creation": "2024-10-30 10:24:16.407399",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shop_details_section",
+  "shop_number",
+  "shop_name",
+  "tenant_name",
+  "area",
+  "rent_amount",
+  "airport",
+  "column_break_whod",
+  "contract_start_date",
+  "contract_expiry_date",
+  "status",
+  "location",
+  "shop_type",
+  "published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "shop_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shop Details"
+  },
+  {
+   "fieldname": "shop_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shop Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shop Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tenant Name",
+   "options": "Tenant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area",
+   "non_negative": 1
+  },
+  {
+   "default": "30000",
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rent Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_whod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Contract Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Contract Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nOccupied\nUnder Maintenance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "shop_type",
+   "fieldtype": "Select",
+   "label": "Shop Type",
+   "options": "Retail\nFood\nServices"
+  },
+  {
+   "fieldname": "airport",
+   "fieldtype": "Link",
+   "label": "Airport",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [
+  {
+   "link_doctype": "Rent Payment",
+   "link_fieldname": "shop_number"
+  }
+ ],
+ "modified": "2024-11-04 09:40:54.495601",
+ "modified_by": "Administrator",
+ "module": "AirportShopManagement",
+ "name": "Airport Shop",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "shops",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "shop_number"
+}

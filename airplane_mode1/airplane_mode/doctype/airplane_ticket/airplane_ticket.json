@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "airplane_ticket_details_section",
   "passenger",
   "flight",
   "source_airport",
@@ -24,7 +25,9 @@
   "flight_price",
   "column_break_wrud",
   "total_amount",
-  "amended_from"
+  "amended_from",
+  "section_break_bvwk",
+  "gate_number"
  ],
  "fields": [
   {
@@ -95,7 +98,8 @@
   },
   {
    "fieldname": "section_break_bsdf",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Items Details"
   },
   {
    "fieldname": "add_ons",
@@ -105,7 +109,8 @@
   },
   {
    "fieldname": "section_break_tcea",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Price Details"
   },
   {
    "fieldname": "flight_price",
@@ -150,12 +155,28 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_bvwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "flight.gate_number",
+   "fieldname": "gate_number",
+   "fieldtype": "Link",
+   "label": "Gate Number",
+   "options": "Airplane Flight"
+  },
+  {
+   "fieldname": "airplane_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Airplane Ticket Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-21 21:49:05.756109",
+ "modified": "2024-11-06 11:33:48.280083",
  "modified_by": "Administrator",
  "module": "Airplane_mode",
  "name": "Airplane Ticket",

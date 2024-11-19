@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Shops</title>
+</head>
+<body>
+
+{% if doc.status == 'Available' %}
+    <div class="card">
+        <h3>{{ doc.airport }}</h3>
+        <h4>Tenant Name - {{ doc.tenant_name }}</h4> 
+        <h4>Shop Number - {{ doc.shop_number }}</h4>
+        <h4>Shop Type - {{ doc.shop_type }}</h4>
+        <h4>Location - {{ doc.location }}</h4>
+
+        <button class="btn" onclick="location.href='/{{ doc.route | e }}'">View Shop</button>
+    </div>
+{% else %}
+    
+{% endif %}
+
+</body>
+</html>

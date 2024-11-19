@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{payment_id}-{tenant_name}-{shop_number}",
+ "creation": "2024-10-30 10:33:01.042583",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rent_payment_details_section",
+  "payment_id",
+  "tenant_name",
+  "shop_number",
+  "payment_amount",
+  "email",
+  "column_break_bdhr",
+  "payment_date",
+  "due_date",
+  "payment_methods",
+  "receipt_number",
+  "late_fees",
+  "status",
+  "disable"
+ ],
+ "fields": [
+  {
+   "fieldname": "rent_payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Rent Payment Details"
+  },
+  {
+   "fieldname": "payment_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment ID",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "shop_number.tenant_name",
+   "fieldname": "tenant_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tenant Name",
+   "options": "Tenant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shop_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shop Number",
+   "options": "Airport Shop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Currency",
+   "label": "Payment Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_bdhr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Payment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_methods",
+   "fieldtype": "Select",
+   "label": "Payment Methods",
+   "options": "Cash\nBank\nTransfer\nCheque",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receipt_number",
+   "fieldtype": "Data",
+   "label": "Receipt Number"
+  },
+  {
+   "fieldname": "late_fees",
+   "fieldtype": "Currency",
+   "label": "Late Fees"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Paid\nPending\nOverdue",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fetch_from": "tenant_name.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Tenant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-13 06:39:21.584238",
+ "modified_by": "Administrator",
+ "module": "AirportShopManagement",
+ "name": "Rent Payment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "payment_id"
+}

@@ -148,23 +148,29 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"airplane_mode1.tasks.all"
-# 	],
+scheduler_events = {
+#    "cron": {
+#      "* * * * *": [
+#          "frappe.Event.py.run_every_minute"
+#         ]
+#     },
+
+	# "cron": [
+	# 	"airplane_mode1.tasks.all"
+	# ],
 # 	"daily": [
 # 		"airplane_mode1.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"airplane_mode1.tasks.hourly"
-# 	],
+ 	# "hourly": [
+	# 	"airplane_mode1.tasks.hourly"
+	# ],
 # 	"weekly": [
 # 		"airplane_mode1.tasks.weekly"
 # 	],
-# 	"monthly": [
-# 		"airplane_mode1.tasks.monthly"
-# 	],
-# }
+ 	 "monthly": [
+ 	 	"airplane_mode1.airplane_mode.event.send_monthly_rent_reminder"
+	 ],
+ }
 
 # Testing
 # -------
