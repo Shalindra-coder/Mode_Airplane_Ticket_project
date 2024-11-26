@@ -52,8 +52,9 @@
    "reqd": 1
   },
   {
+   "fetch_from": "shop_number.rent_amount",
    "fieldname": "payment_amount",
-   "fieldtype": "Currency",
+   "fieldtype": "Data",
    "label": "Payment Amount",
    "non_negative": 1
   },
@@ -114,7 +115,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-13 06:39:21.584238",
+ "modified": "2024-11-26 11:47:19.599819",
  "modified_by": "Administrator",
  "module": "AirportShopManagement",
  "name": "Rent Payment",

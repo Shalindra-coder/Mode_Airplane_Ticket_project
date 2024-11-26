@@ -1,7 +1,7 @@
 {
  "app": "frappe",
  "charts": [],
- "content": "[{\"id\":\"fGRKlGfpnD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Airplane_Mode</span>\",\"col\":12}},{\"id\":\"hU2qC9W0QP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket\",\"col\":3}},{\"id\":\"Wjo7saVLjy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Flight\",\"col\":3}},{\"id\":\"_ZMyptWp7P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket Add-on Type\",\"col\":3}},{\"id\":\"PZOq5omALK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airport\",\"col\":3}},{\"id\":\"a36GLwYMYf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Passengers\",\"col\":3}},{\"id\":\"U4JXVAQEyN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airplanes\",\"col\":3}},{\"id\":\"qQWIqNQl4u\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airlines\",\"col\":3}},{\"id\":\"ZKrqliVxQ5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Reports</span>\",\"col\":12}},{\"id\":\"EZRj3VYshn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane by Airline\",\"col\":3}},{\"id\":\"lY9620_RqH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue by Airline\",\"col\":3}},{\"id\":\"K8myrazPjQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add-on Popularity\",\"col\":3}},{\"id\":\"vI1JOovyqC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Shop Management</span>\",\"col\":11}},{\"id\":\"alzMS5HAn3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rent Payment\",\"col\":3}},{\"id\":\"z8R9hhVhUK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Shop\",\"col\":3}},{\"id\":\"8XCyKKQaPW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Tenant\",\"col\":3}},{\"id\":\"_DYP7M7kWn\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Reports</span>\",\"col\":12}},{\"id\":\"zEaEVoNkEc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Avaible All Shop \",\"col\":3}}]",
+ "content": "[{\"id\":\"fGRKlGfpnD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Airplane_Mode</span>\",\"col\":12}},{\"id\":\"hU2qC9W0QP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket\",\"col\":3}},{\"id\":\"Wjo7saVLjy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Flight\",\"col\":3}},{\"id\":\"_ZMyptWp7P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket Add-on Type\",\"col\":3}},{\"id\":\"PZOq5omALK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airport\",\"col\":3}},{\"id\":\"a36GLwYMYf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Passengers\",\"col\":3}},{\"id\":\"U4JXVAQEyN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airplanes\",\"col\":3}},{\"id\":\"qQWIqNQl4u\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airlines\",\"col\":3}},{\"id\":\"ZKrqliVxQ5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Reports</span>\",\"col\":12}},{\"id\":\"EZRj3VYshn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane by Airline\",\"col\":3}},{\"id\":\"lY9620_RqH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue by Airline\",\"col\":3}},{\"id\":\"K8myrazPjQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add-on Popularity\",\"col\":3}},{\"id\":\"vI1JOovyqC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Shop Management</span>\",\"col\":11}},{\"id\":\"alzMS5HAn3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rent Payment\",\"col\":3}},{\"id\":\"z8R9hhVhUK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Shop\",\"col\":3}},{\"id\":\"8XCyKKQaPW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Tenant\",\"col\":3}},{\"id\":\"_DYP7M7kWn\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Reports</span>\",\"col\":12}},{\"id\":\"ySbuAMVrbO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Availble Shop\",\"col\":3}},{\"id\":\"zEaEVoNkEc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Avaible All Shop \",\"col\":3}}]",
  "creation": "2024-10-21 10:58:13.480267",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +15,7 @@
  "label": "Airplane_mode",
  "link_type": "DocType",
  "links": [],
- "modified": "2024-11-08 10:16:17.652430",
+ "modified": "2024-11-23 09:58:13.393012",
  "modified_by": "Administrator",
  "module": "Airplane_mode",
  "name": "Airplane_mode",
@@ -49,6 +49,13 @@
    "link_to": "Airplane Ticket",
    "stats_filter": "[]",
    "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Availble Shop",
+   "type": "URL",
+   "url": "http://127.0.0.1:8007/shops"
   },
   {
    "color": "Grey",
